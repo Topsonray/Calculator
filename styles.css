@@ -1,13 +1,20 @@
-/* *{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} */
+} 
+
+body{
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    background-color: rgb(9,25,33);
+}
 
 .parent{
     display: grid;
     grid-template-columns: (1fr, 1fr, 1fr, 1fr);
-    grid-rows: 80px;
+    /* grid-rows: 80px; */
     width: 300px;
     color: rgb(7, 17, 26);
     height: 50vh;
@@ -15,7 +22,7 @@
 
 .child{
     border: 1px solid black;
-    background-color: rgba(30, 30, 48, 0.781);
+    background-color: rgb(12,39,52);
 }
 
 #output{
@@ -23,17 +30,18 @@
     background-color: rgb(255, 255, 255);
     display: grid;
     justify-content: start;
-    padding-right: 20px;
+    padding: 8% 0;
     align-items: center;
     color:black;
+    /* height:120px ; */
 }
 
 #red{
     grid-column: 1/3;
-    justify-content: start;
-    display: grid;
-    padding-left: 40px;
-    align-items: center;
+    /* justify-content: start; */
+    /* display: grid; */
+    /* padding-left: 40px; */
+    /* align-items: center; */
     background-color: red;
 
 }
@@ -49,10 +57,11 @@ div, button{
 }
 
 #plus{
-    display: grid;
-    justify-content:center;
-    padding: 10px;
-    /* grid-row:; */
+    /* display: grid; */
+    /* justify-content:center; */
+    /* padding: 10px; */
+    grid-row: 4/6;
+    grid-column: 4/5;
 
 }
 
